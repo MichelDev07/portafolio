@@ -8,7 +8,7 @@ Bienvenido a mi portafolio profesional. Aquí encontrarás información sobre mi
 
 Soy un desarrollador apasionado por crear soluciones innovadoras y de calidad. Me especializo en desarrollo **full-stack** con experiencia en tecnologías modernas tanto en frontend como en backend.
 
-- 📍 Ubicación: [Tu ubicación]
+- 📍 Ubicación: PARAGUAY
 - 💼 Experiencia: [X años] en desarrollo de software
 - 🎓 Formación: [Tu educación]
 - 🌱 Actualmente aprendiendo: [Tecnologías que estás estudiando]
