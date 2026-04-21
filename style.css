@@ -29,7 +29,7 @@
 html.dark {
     --bg: #050c14;
     --bg-2: #0d1520;
-    --bg-card: #0d1a26;
+    --bg-card: #0d1520;
     --text: #e8f4fd;
     --text-2: #94afc9;
     --text-3: #4a6480;
@@ -95,8 +95,8 @@ html.dark .bg-glow {
     backdrop-filter: blur(12px);
 }
 
-.toggle-icon::before { content: '☀️'; font-size: 1.1rem; }
-html.dark .toggle-icon::before { content: '🌙'; }
+.toggle-icon::before { content: '☼'; font-size: 1.1rem; }
+html.dark .toggle-icon::before { content: '☽';}
 
 .theme-toggle:hover {
     border-color: var(--green);
