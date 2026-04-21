@@ -1,0 +1,31 @@
+/* ... Tus estilos anteriores ... */
+
+/* Mejora de visibilidad en modo oscuro para chips */
+html.dark .skill-chip {
+    background: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+}
+
+/* Mejora de las tarjetas de proyectos en modo oscuro */
+html.dark .project-card {
+    background: rgba(30, 41, 59, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Enlaces de proyectos */
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+html.dark .project-link {
+    color: #60a5fa;
+}
+
+/* Transición suave para el cambio de tema */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
