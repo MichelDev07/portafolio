@@ -1,122 +1,306 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michel Soto | Portafolio</title>
-    <meta name="description" content="Portafolio web profesional de Michel Soto. Proyectos en Java, Astro y desarrollo web." />
-    <link rel="icon" href="src/images/iconoportafolio.png" />
+    <title>Michel Soto — Developer</title>
+    <meta name="description" content="Portafolio de Michel Soto. Desarrollo web y de escritorio con Java, Astro y más." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar modo oscuro"></button>
-    
+
+    <!-- Fondo animado -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <!-- Botón tema -->
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar modo">
+        <span class="toggle-icon"></span>
+    </button>
+
+    <!-- Navegación flotante -->
+    <nav class="floating-nav" id="floatingNav">
+        <a href="#inicio">inicio</a>
+        <a href="#sobre-mi">sobre mí</a>
+        <a href="#habilidades">habilidades</a>
+        <a href="#proyectos">proyectos</a>
+        <a href="#contacto">contacto</a>
+    </nav>
+
     <div class="page-shell">
-        <header class="site-header">
-            <div>
-                <p class="eyebrow">Portafolio</p>
-                <h1>Hola, soy <strong>Michel</strong>.</h1>
-                <img class="profile-image" src="src/images/perfil.jpg" alt="Foto de Michel Soto" loading="lazy" />
-                <p class="hero-text">
-                    Programador de aplicaciones web y de escritorio, con experiencia en 
-                    <strong>Java, Astro, HTML, CSS y Node.js</strong>.
-                    Me gusta crear soluciones eficientes para resolver problemas.
-                </p>
+
+        <!-- ====== HERO ====== -->
+        <header id="inicio" class="hero">
+            <div class="hero-meta">
+                <span class="badge">disponible para proyectos</span>
             </div>
-            <nav class="top-nav">
-                <a href="#sobre-mi">Sobre mí</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
+
+            <div class="hero-layout">
+                <div class="hero-text-block">
+                    <p class="hero-eyebrow">// Developer & Builder</p>
+                    <h1 class="hero-name">
+                        <span class="name-line">Michel</span>
+                        <span class="name-line accent">Soto.</span>
+                    </h1>
+                    <p class="hero-bio">
+                        Programador de aplicaciones <strong>web y de escritorio</strong>. 
+                        Creo soluciones eficientes con Java, Astro, y tecnologías modernas. 
+                        Enfocado en experiencias que funcionan en cualquier pantalla.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                        <a href="#contacto" class="btn btn-ghost">Contactarme →</a>
+                    </div>
+                </div>
+
+                <div class="hero-image-block">
+                    <div class="profile-frame">
+                        <img class="profile-photo" src="src/images/perfil.jpg" alt="Michel Soto" loading="lazy" />
+                        <div class="profile-ring r1" aria-hidden="true"></div>
+                        <div class="profile-ring r2" aria-hidden="true"></div>
+                        <div class="profile-dot d1" aria-hidden="true"></div>
+                        <div class="profile-dot d2" aria-hidden="true"></div>
+                        <div class="profile-dot d3" aria-hidden="true"></div>
+                    </div>
+                    <div class="stats-card">
+                        <div class="stat">
+                            <span class="stat-num">2<span class="stat-plus">+</span></span>
+                            <span class="stat-label">años de experiencia</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">8</span>
+                            <span class="stat-label">tecnologías</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-hint" aria-hidden="true">
+                <span class="scroll-line"></span>
+                <span class="scroll-text">scroll</span>
+            </div>
         </header>
 
         <main>
-            <section id="sobre-mi" class="section panel">
-                <div class="section-content">
-                    <h2>Sobre mí</h2>
-                    <p>Estoy enfocado en crear experiencias digitales que funcionan en cualquier pantalla.</p>
-                    <div class="highlight-box">
-                        <span>2+ años</span>
-                        <span>Proyectos reales</span>
-                        <span>Foco en usabilidad</span>
+
+            <!-- ====== SOBRE MÍ ====== -->
+            <section id="sobre-mi" class="section reveal">
+                <div class="section-label">01 — sobre mí</div>
+                <div class="about-layout">
+                    <div class="about-text">
+                        <h2>Construyo cosas<br /><em>que importan.</em></h2>
+                        <p>Soy un desarrollador apasionado por crear software que resuelva problemas reales. Mi enfoque combina lógica de backend sólida con interfaces modernas y accesibles.</p>
+                        <p>Cuando no estoy programando, estoy explorando nuevas tecnologías y buscando formas de mejorar mis habilidades.</p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="hi-icon">⚡</div>
+                            <div>
+                                <strong>Rendimiento primero</strong>
+                                <p>Código limpio y eficiente, optimizado desde el inicio.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="hi-icon">📱</div>
+                            <div>
+                                <strong>100% Responsive</strong>
+                                <p>Interfaces que se ven perfectas en cualquier dispositivo.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="hi-icon">🔧</div>
+                            <div>
+                                <strong>Soluciones reales</strong>
+                                <p>Experiencia en proyectos con usuarios y datos reales.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section id="habilidades" class="section">
-                <h2>Habilidades</h2>
-                <div class="skills-grid">
-                    <span class="skill-chip">Astro</span>
-                    <span class="skill-chip">HTML</span>
-                    <span class="skill-chip">CSS</span>
-                    <span class="skill-chip">JAVA</span>
-                    <span class="skill-chip">GENEXUS</span>
-                    <span class="skill-chip">SQL SERVER</span>
-                    <span class="skill-chip">MySQL</span>
-                    <span class="skill-chip">Git</span>
+            <!-- ====== HABILIDADES ====== -->
+            <section id="habilidades" class="section reveal">
+                <div class="section-label">02 — habilidades</div>
+                <h2>Stack <em>técnico.</em></h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <p class="skill-cat-title">Frontend</p>
+                        <div class="skills-row">
+                            <div class="skill-tag">
+                                <span class="skill-icon">◆</span> Astro
+                            </div>
+                            <div class="skill-tag">
+                                <span class="skill-icon">◆</span> HTML
+                            </div>
+                            <div class="skill-tag">
+                                <span class="skill-icon">◆</span> CSS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-divider"></div>
+                    <div class="skill-category">
+                        <p class="skill-cat-title">Backend & Datos</p>
+                        <div class="skills-row">
+                            <div class="skill-tag featured">
+                                <span class="skill-icon">◆</span> Java
+                            </div>
+                            <div class="skill-tag featured">
+                                <span class="skill-icon">◆</span> GeneXus
+                            </div>
+                            <div class="skill-tag">
+                                <span class="skill-icon">◆</span> SQL Server
+                            </div>
+                            <div class="skill-tag">
+                                <span class="skill-icon">◆</span> MySQL
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-divider"></div>
+                    <div class="skill-category">
+                        <p class="skill-cat-title">Herramientas</p>
+                        <div class="skills-row">
+                            <div class="skill-tag">
+                                <span class="skill-icon">◆</span> Git
+                            </div>
+                            <div class="skill-tag">
+                                <span class="skill-icon">◆</span> Node.js
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section id="proyectos" class="section panel">
-                <h2>Proyectos destacados</h2>
+            <!-- ====== PROYECTOS ====== -->
+            <section id="proyectos" class="section reveal">
+                <div class="section-label">03 — proyectos</div>
+                <h2>Trabajo <em>destacado.</em></h2>
                 <div class="projects-grid">
-                    <article class="project-card">
+
+                    <article class="project-card featured-project">
+                        <div class="project-header">
+                            <span class="project-num">01</span>
+                            <span class="project-tag">Web</span>
+                        </div>
                         <h3>Portafolio Personal</h3>
-                        <p>Sitio web moderno y rápido con Astro para marca personal.</p>
-                        <a class="project-link" href="#">Ver detalles →</a>
+                        <p>Sitio web moderno y rápido construido con Astro para marca personal. Diseño enfocado en rendimiento y experiencia de usuario.</p>
+                        <div class="project-tech">
+                            <span>Astro</span><span>CSS</span><span>HTML</span>
+                        </div>
+                        <a class="project-link" href="#">Ver proyecto <span class="arrow">→</span></a>
                     </article>
+
                     <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-num">02</span>
+                            <span class="project-tag">App</span>
+                        </div>
                         <h3>Gestión de Clientes</h3>
-                        <p>Interfaz intuitiva para seguimiento de tareas y métricas.</p>
-                        <a class="project-link" href="#">Ver detalles →</a>
+                        <p>Interfaz intuitiva para seguimiento de tareas y métricas de negocio en tiempo real.</p>
+                        <div class="project-tech">
+                            <span>Java</span><span>SQL</span>
+                        </div>
+                        <a class="project-link" href="#">Ver proyecto <span class="arrow">→</span></a>
                     </article>
+
                     <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-num">03</span>
+                            <span class="project-tag">Web</span>
+                        </div>
                         <h3>Blog Profesional</h3>
-                        <p>Plataforma de contenido optimizada para SEO y lectura.</p>
-                        <a class="project-link" href="#">Ver detalles →</a>
+                        <p>Plataforma de contenido optimizada para SEO con lectura agradable y carga rápida.</p>
+                        <div class="project-tech">
+                            <span>Astro</span><span>Node.js</span>
+                        </div>
+                        <a class="project-link" href="#">Ver proyecto <span class="arrow">→</span></a>
                     </article>
+
                 </div>
             </section>
 
-            <section id="contacto" class="section contact-section">
-                <h2>Contacto</h2>
-                <div class="contact-grid">
-                    <a class="contact-card" href="mailto:michelsotodev@gmail.com">
-                        <span>Email</span>
-                        <strong>michelsotodev@gmail.com</strong>
-                    </a>
-                    <a class="contact-card" href="https://instagram.com/michelsottto" target="_blank">
-                        <span>Instagram</span>
-                        <strong>@michelsottto</strong>
-                    </a>
-                    <a class="contact-card" href="https://github.com/MichelDev07" target="_blank">
-                        <span>GitHub</span>
-                        <strong>MichelDev07</strong>
-                    </a>
+            <!-- ====== CONTACTO ====== -->
+            <section id="contacto" class="section reveal">
+                <div class="section-label">04 — contacto</div>
+                <div class="contact-wrapper">
+                    <div class="contact-text">
+                        <h2>¿Trabajamos<br /><em>juntos?</em></h2>
+                        <p>Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales. No dudes en escribirme.</p>
+                    </div>
+                    <div class="contact-links">
+                        <a class="contact-item" href="mailto:michelsotodev@gmail.com">
+                            <span class="contact-platform">Email</span>
+                            <strong class="contact-value">michelsotodev@gmail.com</strong>
+                            <span class="contact-arrow">↗</span>
+                        </a>
+                        <a class="contact-item" href="https://github.com/MichelDev07" target="_blank" rel="noopener">
+                            <span class="contact-platform">GitHub</span>
+                            <strong class="contact-value">MichelDev07</strong>
+                            <span class="contact-arrow">↗</span>
+                        </a>
+                        <a class="contact-item" href="https://instagram.com/michelsottto" target="_blank" rel="noopener">
+                            <span class="contact-platform">Instagram</span>
+                            <strong class="contact-value">@michelsottto</strong>
+                            <span class="contact-arrow">↗</span>
+                        </a>
+                    </div>
                 </div>
             </section>
+
         </main>
 
         <footer class="site-footer">
-            <p>© 2026 - Michel Soto. Hecho con pasión.</p>
+            <span class="footer-code">console.log("© 2026 Michel Soto")</span>
+            <span class="footer-dot"></span>
+            <span>Hecho con pasión desde Paraguay 🇵🇾</span>
         </footer>
+
     </div>
 
     <script>
-        const themeToggle = document.getElementById('themeToggle');
-        const htmlElement = document.documentElement;
-        
-        // Inicialización del tema
-        const savedTheme = localStorage.getItem('theme') || 'dark';
-        htmlElement.classList.toggle('dark', savedTheme === 'dark');
-        themeToggle.setAttribute('data-theme', savedTheme);
+        // Tema
+        const toggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        const saved = localStorage.getItem('theme') || 'dark';
+        if (saved === 'light') html.classList.remove('dark');
 
-        themeToggle.addEventListener('click', () => {
-            const isDark = htmlElement.classList.toggle('dark');
-            const newTheme = isDark ? 'dark' : 'light';
-            localStorage.setItem('theme', newTheme);
-            themeToggle.setAttribute('data-theme', newTheme);
+        toggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        });
+
+        // Nav flotante al scroll
+        const nav = document.getElementById('floatingNav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('visible', window.scrollY > 80);
+        });
+
+        // Reveal al scroll
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('revealed');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => observer.observe(el));
+
+        // Active nav link
+        const sections = document.querySelectorAll('section[id], header[id]');
+        const navLinks = document.querySelectorAll('.floating-nav a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(s => {
+                if (window.scrollY >= s.offsetTop - 120) current = s.id;
+            });
+            navLinks.forEach(a => {
+                a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+            });
         });
     </script>
 </body>
