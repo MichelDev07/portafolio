@@ -46,12 +46,12 @@
                         <span class="name-line accent">Soto.</span>
                     </h1>
                     <p class="hero-bio">
-                        Programador de aplicaciones <strong>web y de escritorio</strong>. 
-                        Creo soluciones eficientes con Java, Astro, y tecnologías modernas. 
+                        Programador de apps <strong> de escritorio y web</strong>. 
+                        Creo soluciones eficientes con Java, Genexus y tecnologías modernas. 
                         Enfocado en experiencias que funcionan en cualquier pantalla.
                     </p>
                     <div class="hero-cta">
-                        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                       
                         <a href="#contacto" class="btn btn-ghost">Contactarme →</a>
                     </div>
                 </div>
@@ -93,26 +93,26 @@
                 <div class="about-layout">
                     <div class="about-text">
                         <h2>Construyo cosas<br /><em>que importan.</em></h2>
-                        <p>Soy un desarrollador apasionado por crear software que resuelva problemas reales. Mi enfoque combina lógica de backend sólida con interfaces modernas y accesibles.</p>
+                        <p>Soy un alguien apasionado por crear software que resuelva problemas reales. Mi enfoque combina lógica de backend sólida con interfaces modernas y accesibles.</p>
                         <p>Cuando no estoy programando, estoy explorando nuevas tecnologías y buscando formas de mejorar mis habilidades.</p>
                     </div>
                     <div class="about-highlights">
                         <div class="highlight-item">
-                            <div class="hi-icon">⚡</div>
+                            <div class="hi-icon">⚡︎</div>
                             <div>
                                 <strong>Rendimiento primero</strong>
                                 <p>Código limpio y eficiente, optimizado desde el inicio.</p>
                             </div>
                         </div>
                         <div class="highlight-item">
-                            <div class="hi-icon">📱</div>
+                            <div class="hi-icon">⌞ ⌝</div>
                             <div>
                                 <strong>100% Responsive</strong>
                                 <p>Interfaces que se ven perfectas en cualquier dispositivo.</p>
                             </div>
                         </div>
                         <div class="highlight-item">
-                            <div class="hi-icon">🔧</div>
+                            <div class="hi-icon">✈︎</div>
                             <div>
                                 <strong>Soluciones reales</strong>
                                 <p>Experiencia en proyectos con usuarios y datos reales.</p>
@@ -177,7 +177,7 @@
             <!-- ====== PROYECTOS ====== -->
             <section id="proyectos" class="section reveal">
                 <div class="section-label">03 — proyectos</div>
-                <h2>Trabajo <em>destacado.</em></h2>
+                <h2>Trabajos <em>destacados</em></h2>
                 <div class="projects-grid">
 
                     <article class="project-card featured-project">
@@ -211,12 +211,22 @@
                             <span class="project-num">03</span>
                             <span class="project-tag">Web</span>
                         </div>
-                        <h3>Blog Profesional</h3>
-                        <p>Plataforma de contenido optimizada para SEO con lectura agradable y carga rápida.</p>
+                        <h3>E-Commerce</h3>
+                        <p>Plataforma online para la venta de productos.</p>
                         <div class="project-tech">
-                            <span>Astro</span><span>Node.js</span>
+                            <span>GeneXus</span><span>SQL Server</span>
                         </div>
-                        <a class="project-link" href="#">Ver proyecto <span class="arrow">→</span></a>
+                        <a class="project-link" href="#">En desarrollo <span class="arrow">!!!!<!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Document</title>
+                        </head>
+                        <body>
+                            
+                        </body>
+                        </html></span></a>
                     </article>
 
                 </div>
@@ -231,6 +241,11 @@
                         <p>Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales. No dudes en escribirme.</p>
                     </div>
                     <div class="contact-links">
+                         <a class="contact-item" href="https://api.whatsapp.com/send?phone=595983456253&text=Hola%20Michel" target="_blank" rel="noopener">
+                            <span class="contact-platform">Whatsapp</span>
+                            <strong class="contact-value">Michel Soto</strong>
+                            <span class="contact-arrow">↗</span>
+                        </a>
                         <a class="contact-item" href="mailto:michelsotodev@gmail.com">
                             <span class="contact-platform">Email</span>
                             <strong class="contact-value">michelsotodev@gmail.com</strong>
@@ -246,6 +261,7 @@
                             <strong class="contact-value">@michelsottto</strong>
                             <span class="contact-arrow">↗</span>
                         </a>
+                        
                     </div>
                 </div>
             </section>
@@ -253,9 +269,9 @@
         </main>
 
         <footer class="site-footer">
-            <span class="footer-code">console.log("© 2026 Michel Soto")</span>
+            <span class="footer-code">System.out.println("© <span id="year"></span> Michel Soto");</span>
             <span class="footer-dot"></span>
-            <span>Hecho con pasión desde Paraguay 🇵🇾</span>
+            <span>Hecho con pasión desde 🇵🇾</span>
         </footer>
 
     </div>
@@ -302,6 +318,7 @@
                 a.classList.toggle('active', a.getAttribute('href') === '#' + current);
             });
         });
+        document.getElementById("year").innerText = new Date().getFullYear();
     </script>
 </body>
 </html>
